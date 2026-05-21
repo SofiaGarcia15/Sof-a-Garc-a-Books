@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resenas | Sofia Garcia Books</title>
+  <link rel="icon" type="image/png" href="logosgb.png">
+  <link rel="apple-touch-icon" href="logosgb.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><img src="logosgb.png" alt="Logo Sofia Garcia Books"><span class="brand-title">Sof&iacute;a Garc&iacute;a Books</span></a><nav class="main-nav"><a class="pill" href="index.html">Inicio</a><a class="pill" href="libros.html">Libros</a><a class="pill active" href="resenas.html">Rese&ntilde;as</a><a class="pill" href="buscador.html">Buscador</a><a class="pill" href="autora.html">Sobre la autora</a><a class="icon-pill" href="carrito.html" aria-label="Carrito">C<span class="cart-count" data-cart-count>0</span></a></nav><button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false"><span aria-hidden="true"></span></button></div></header>
+  <main>
+    <section class="page-hero"><div class="section-inner"><h1>Rese&ntilde;as</h1><p>Comparte tu calificaci&oacute;n y comentario. Tu rese&ntilde;a aparecer&aacute; en esta p&aacute;gina.</p></div></section>
+    <section class="content-band tint">
+      <div class="section-inner">
+        <h2 class="section-title reviews-title">Rese&ntilde;as destacadas</h2>
+        <div class="reviews-grid">
+          <article class="review-card score"><div class="score-number">4.6</div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p>(128 rese&ntilde;as)</p></article>
+          <article class="review-card"><strong>Mar&iacute;a G. <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span></strong><p>Una historia hermosa y muy inspiradora. Me encant&oacute; cada p&aacute;gina.</p></article>
+          <article class="review-card"><strong>Ana L. <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span></strong><p>Los personajes son reales y la trama te atrapa desde el inicio.</p></article>
+          <article class="review-card"><strong>Luc&iacute;a R. <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span></strong><p>Me hizo re&iacute;r, llorar y creer en el amor verdadero.</p></article>
+        </div>
+        <div class="reviews-grid" id="userReviews" style="margin-top:18px"></div>
+        <div class="rating-row">Califica este libro <span class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</span></div>
+        <form class="review-form" id="reviewForm">
+          <h2 class="section-title">Escribe tu rese&ntilde;a</h2>
+          <div class="form-grid">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <select name="rating" aria-label="Calificacion">
+              <option value="5">5 estrellas</option><option value="4">4 estrellas</option><option value="3">3 estrellas</option><option value="2">2 estrellas</option><option value="1">1 estrella</option>
+            </select>
+          </div>
+          <textarea name="comment" placeholder="Escribe tu comentario" required></textarea>
+          <button class="rose-button" type="submit">Publicar rese&ntilde;a</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>Sof&iacute;a Garc&iacute;a Books &middot; Todos los derechos reservados.</footer>
+  <div class="drawer-backdrop"></div><aside class="drawer" aria-hidden="true"><button class="drawer-close" type="button" aria-label="Cerrar menu">&times;</button><nav class="drawer-links"><a href="index.html">Inicio</a><a href="libros.html">Libros</a><a href="resenas.html">Rese&ntilde;as</a><a href="buscador.html">Buscador</a><a href="autora.html">Sobre la autora</a><a href="carrito.html">Carrito</a><div class="drawer-rule"></div><a href="lanzamientos.html">Pr&oacute;ximos lanzamientos</a><a href="blog.html">Blog</a><a href="favoritos.html">Mis favoritos</a><a href="contacto.html">Contacto</a><a href="terminos.html">T&eacute;rminos y condiciones</a></nav></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div><script src="app.js"></script>
+</body>
+</html>

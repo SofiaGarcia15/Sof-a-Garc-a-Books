@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi cuenta | Sofia Garcia Books</title>
+  <link rel="icon" type="image/png" href="logosgb.png">
+  <link rel="apple-touch-icon" href="logosgb.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Ir al inicio"><img src="logosgb.png" alt="Logo Sofia Garcia Books"><span class="brand-title">Sof&iacute;a Garc&iacute;a Books</span></a>
+      <nav class="main-nav" aria-label="Menu principal">
+        <a class="pill" href="index.html">Inicio</a>
+        <a class="pill" href="libros.html">Libros</a>
+        <a class="pill" href="resenas.html">Rese&ntilde;as</a>
+        <a class="pill" href="buscador.html">Buscador</a>
+        <a class="pill" href="autora.html">Sobre la autora</a>
+        <a class="icon-pill active account-pill" href="cuenta.html" aria-label="Mi cuenta"></a>
+        <a class="icon-pill" href="carrito.html" aria-label="Carrito">C<span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+      <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false"><span aria-hidden="true"></span></button>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="section-inner">
+        <h1>Mi cuenta</h1>
+        <p>Tu perfil de lectora, libros guardados, compras, comentarios y avisos de nuevos lanzamientos en Sof&iacute;a Garc&iacute;a Books.</p>
+      </div>
+    </section>
+
+    <section class="content-band">
+      <div class="section-inner account-shell">
+        <aside class="account-panel">
+          <div class="account-avatar" data-account-initial>S</div>
+          <div>
+            <h2 data-account-name>Sof&iacute;a lectora</h2>
+            <p data-account-email>correo@ejemplo.com</p>
+          </div>
+          <form class="account-form" data-account-form>
+            <input name="name" type="text" placeholder="Nombre de usuario" autocomplete="name">
+            <input name="email" type="email" placeholder="Correo electr&oacute;nico" autocomplete="email">
+            <input name="password" type="password" placeholder="Contrase&ntilde;a" autocomplete="current-password">
+            <button class="rose-button" type="submit">Guardar cuenta</button>
+          </form>
+        </aside>
+
+        <div class="account-summary">
+          <h2>Resumen de lectura</h2>
+          <div class="account-grid">
+            <article class="account-stat"><strong data-account-count="read">0</strong><span>Libros le&iacute;dos</span></article>
+            <article class="account-stat"><strong data-account-count="cart">0</strong><span>Libros comprados</span></article>
+            <article class="account-stat"><strong data-account-count="favorites">0</strong><span>Libros favoritos</span></article>
+            <article class="account-stat"><strong data-account-count="notifications">0</strong><span>Avisos solicitados</span></article>
+          </div>
+
+          <div class="account-activity">
+            <h2>Actividad reciente</h2>
+            <div class="account-list" data-account-activity></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>Sof&iacute;a Garc&iacute;a Books &middot; Todos los derechos reservados.</footer>
+  <div class="drawer-backdrop"></div>
+  <aside class="drawer" aria-hidden="true">
+    <button class="drawer-close" type="button" aria-label="Cerrar menu">&times;</button>
+    <nav class="drawer-links" aria-label="Menu lateral">
+      <a href="index.html">Inicio</a>
+      <a href="libros.html">Libros</a>
+      <a href="resenas.html">Rese&ntilde;as</a>
+      <a href="buscador.html">Buscador</a>
+      <a href="autora.html">Sobre la autora</a>
+      <a href="carrito.html">Carrito</a>
+      <div class="drawer-rule"></div>
+      <a href="lanzamientos.html">Pr&oacute;ximos lanzamientos</a>
+      <a href="blog.html">Blog</a>
+      <a href="favoritos.html">Mis favoritos</a>
+      <a href="cuenta.html">Mi cuenta</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="terminos.html">T&eacute;rminos y condiciones</a>
+    </nav>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
